@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+:root{
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+/* main container start */
+.container{
+    align-items: center;
+    padding: 80px 165px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+/* home containt start */
+.container_home-containt{
+    max-width: 550px;
+}
+/* h1 */
+.container_home-containt h1{
+    text-align: center;
+    font-weight: 600;
+    font-size: 36px;
+    letter-spacing: 0.25px;
+    color: var(--Very-Dark-Blue);
+}
+/* span */
+.container_home-containt h1 span{
+    font-weight: 200;
+}
+/* p */
+.container_home-containt p{
+    text-align: center;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 0.1px;
+    color: var(--Grayish-Blue);
+}
+/* home containt finish */
+
+/* main box container */
+.container_box-container{
+    max-width: 1120px;
+    column-gap: 30px;
+}
+/* common heading css */
+h3{
+    margin-bottom: auto;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--Very-Dark-Blue);
+}
+p{
+    margin-bottom: auto;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.09px;
+    color: var(--Grayish-Blue);
+    margin-bottom: 40px;
+}
+/* CSS for all card-box */
+.container_box-container .box{
+    max-width: 360px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 15px 30px 0px rgba(0, 81, 171, 0.15);
+    padding: 32px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+/* img inside box */
+img{
+    margin-left: auto; /* Push the image to the right */
+    margin-top: auto;
+}
+

@@ -1,0 +1,111 @@
+
+/* responsive for desktop */
+@media (min-width:991px){
+    .container_box-container{
+        max-width: 1120px;
+        column-gap: 30px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+        "start mid1 end"
+        "start mid2 end"; 
+    }
+    .box1{
+        grid-area: start;
+        align-self: center; 
+        border-top: .5rem solid var(--Cyan);   
+    }
+    .box2{
+        grid-area: mid1;
+        border-top: .5rem solid var(--Red);
+    }
+    .box3{
+        grid-area: mid2;
+        border-top: .5rem solid var(--Orange);
+    }
+    .box4{
+        border-top: .5rem solid var(--Blue);
+        grid-area: end;
+        align-self: center;
+    }
+}
+
+@media (min-width:991px) and (max-width:1025px){
+    .container{
+        padding: 80px 100px;
+    }
+} 
+
+/* responsive for tablet */
+
+@media (min-width:426px) and (max-width:991px){
+    .container{
+        padding: 80px 80px;
+    }
+    .container_box-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+        "box1 box2"
+        "box3 box4";
+    }
+    .box1{
+        grid-area: box1;
+        border-top: .5rem solid var(--Cyan);   
+    }
+    .box2{
+        grid-area: box2;
+        border-top: .5rem solid var(--Red);
+    }
+    .box3{
+        grid-area: box3;
+        border-top: .5rem solid var(--Orange);
+    }
+    .box4{
+        grid-area: box4;
+        border-top: .5rem solid var(--Blue);
+        
+    }
+}
+
+/* responsive for mobile */
+
+@media (max-width: 426px) {
+    .container{
+        align-items: center;
+        padding: 85px 32px 78px 32px;
+    }
+    .container_home-containt h1{
+        font-size: 24px;
+        letter-spacing: 0.17px;
+    }
+    .container_home-containt p{
+        font-size: 15px;
+        text-align: center;
+        margin-bottom: 76px;
+    }
+    .container_box-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .box1{
+       
+        border-top: .5rem solid var(--Cyan);   
+    }
+    .box2{
+  
+        border-top: .5rem solid var(--Red);
+    }
+    .box3{
+  
+        border-top: .5rem solid var(--Orange);
+    }
+    .box4{
+
+        border-top: .5rem solid var(--Blue);
+        
+    }
+}
+
